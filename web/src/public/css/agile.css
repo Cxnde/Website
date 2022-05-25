@@ -4,7 +4,7 @@
   --accent-color-dark: rgba(226, 77, 54, 1);
   --accent-color: rgba(89, 110, 166, 1);
   --accent-color-dark: rgba(71, 88, 133, 1);
-  --dark-color: rgba(104, 109, 115, 1);
+  --dark-color: rgba(69, 36, 152, .71);
   --dark-color-alt: rgba(156, 160, 165, 1);
   --medium-color: #bbb;
   --light-color: #eee;
@@ -53,26 +53,26 @@ p, ol li, ul li {
   color: #ccc;
 }
 h1 {
-  font-size: calc(1rem + 3.5vw);
+  font-size: calc(1rem + 2.1vw);
   background-color: var(--accent-color);
   color: var(--light-color);
   padding: var(--padding-lg) var(--padding-xl);
   margin: var(--margin-lg) auto;
 }
 h2 {
-  font-size: calc(1rem + 2.7vw);
+  font-size: calc(1rem + 2.1vw);
 }
 h3 {
   font-size: calc(1rem + 2.1vw);
 }
 h4 {
-  font-size: calc(1rem + 1.5vw);
+  font-size: calc(1rem + 2.1vw);
 }
 h5 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 2.1vw);
 }
 h6 {
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(1rem + 2.1vw);
 }
 h2, h3, h4, h5, h6, .card {
   padding: var(--padding-lg);
