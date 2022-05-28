@@ -32,6 +32,9 @@ if __name__ == '__main__':
   
   config.add_route('product_page', '/product')
   config.add_view(get_product, route_name='product_page')
+  
+  config.add_route('proposition_page', '/proposition')
+  config.add_view(get_proposition, route_name='proposition_page')
 
   config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
