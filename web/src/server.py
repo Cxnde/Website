@@ -47,7 +47,7 @@ def get_pivot(req):
   cursor.execute("select first_name, last_name, email from Users;")
   records = cursor.fetchall()
   db.close()
- 
+  
   return render_to_response('templates/pivots.html', {'users': records}, request=req)
 
 def get_features(req):
@@ -57,7 +57,7 @@ def get_features(req):
   cursor.execute("select first_name, last_name, email from Users;")
   records = cursor.fetchall()
   db.close()
- 
+  
   return render_to_response('templates/features.html', {'users': records}, request=req)
   
 ''' Route Configurations '''
