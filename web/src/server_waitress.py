@@ -48,7 +48,7 @@ def get_pivot(req):
   records = cursor.fetchall()
   db.close()
  
-return render_to_response('templates/pivots.html', {'users': records}, request=req)
+  return render_to_response('templates/pivots.html', {'users': records}, request=req)
 
 ''' Route Configurations '''
 if __name__ == '__main__':
