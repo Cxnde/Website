@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Botbuddy</title>
+    <meta name="author" content="Candelario Caldera">
+    <meta name="description" content="BotBuddy Webpage">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+
+    <div class='hero'>
+      <h1> BotBuddy </h1>
+      <p> A personal desk robot for you. </p>
+      <p> Browse around & learn more of what to expect from BotBuddy! </p>   
+      
+      <h1>
+      <a href= "/" class='btn medium outline'> Home </a>
+      <a href= "/product" class='btn medium outline'> Product </a>
+      <a href= "/proposition" class='btn medium outline'>  Proposition </a>
+      <a href= "/features" class='btn medium outline'>  Features Vs. Benefits </a>
+      <a href= "/pivots" class='btn medium outline'>  Pivots </a>
+      </h1>
+        
+    </div>
+
+    <section class='padding-responsive'>
+      
+      <p> Here we would like to keep an updated page as we introduce new ideas so it will be easy to distinguish how BotBuddy can benedit you in your life! </p>
+      
+      <div class='separator'>Features vs. Benefits</div>
+      <p> </p>
+   
+        <p> </p>
+        <p>  </p>
+        <p>  </p>
+      
+      <div class='separator'>CEO's</div>
+      <p> Feel free to contact us with any questions, concerns, or requests! </p>
+
+      <table class='margin-top-xl'>
+        <thead>
+          <tr>
+            <th class='small'> First Name </th>
+            <th class='medium'> Last Name </th>
+            <th class='large'> Email </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+            <td> {{user[0]}} </td>
+            <td> {{user[1]}} </td>
+            <td> {{user[2]}} </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <hr>
+
+       <div class='separator'>Place a Pre-order</div>
+
+      <form>
+
+        <section class='responsive_grid'>
+
+          <div class='field'>
+            <label> Enter your full name: &nbsp;</label>
+            <input type='text' name='name' value='' class='margin-top-lg'>
+          </div>
+
+          <div class='field select '>
+            <label> Choose a color: &nbsp;</label>
+            <div class="select margin-top-lg">
+              <select>
+                <option>--------</option>
+                <option>Red</option>
+                <option>Green</option>
+                <option>Blue</option>
+              </select>
+              <div class="select__arrow"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class='responsive_grid'>
+          <div class="field">
+            <label> Intended Use </label>
+            <label class="margin-top-lg control control--checkbox">Personal
+              <input type="checkbox" checked="checked" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--checkbox">Instructional
+              <input type="checkbox" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="field">
+            <label> Shipping Method: </label>
+            <label class="margin-top-lg control control--radio">USPS Retail Ground
+              <input type="radio" name="radio" checked="checked" />
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Priority Mail Express
+              <input type="radio" name="radio" />
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+        </section>
+
+      </form>
+
+      
+    </section>
+
+  </body>
+</html>
